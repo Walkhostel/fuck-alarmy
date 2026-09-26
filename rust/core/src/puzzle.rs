@@ -1,3 +1,5 @@
+//! Вся математика примера — тут. Меняй только `compute_answer`.
+
 use rand::Rng;
 
 pub struct Puzzle {
@@ -5,10 +7,15 @@ pub struct Puzzle {
     pub b: i32,
     pub answer: i32,
 }
-//math task !!!CHANGE HERE!!!
+
+// ======================================================================
+// ТВОЯ ФОРМУЛА. a и b — случайные числа из диапазона [min, max].
+// Верни правильный ответ.
+// ======================================================================
 pub fn compute_answer(a: i32, b: i32) -> i32 {
     a * b
 }
+// ======================================================================
 
 fn random_in_range(min: i32, max: i32) -> i32 {
     let (lo, hi) = if min <= max { (min, max) } else { (max, min) };
@@ -27,7 +34,7 @@ pub fn check(user_answer: i32, correct_answer: i32) -> bool {
 }
 
 #[cfg(test)]
-mod tests {:wq
+mod tests {
     use super::*;
 
     #[test]
