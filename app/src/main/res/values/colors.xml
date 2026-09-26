@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_black">#000000</color>
+    <color name="app_red">#F4260C</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_gray_hint">#888888</color>
+</resources>

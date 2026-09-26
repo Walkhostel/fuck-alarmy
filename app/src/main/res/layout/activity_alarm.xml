@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/app_black">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Будильник"
+        android:textColor="@color/app_white"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvPuzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_white"
+        android:textSize="48sp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:hint="Ответ"
+        android:textColorHint="@color/app_gray_hint"
+        android:textColor="@color/app_white" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Неверно, попробуйте ещё раз"
+        android:textColor="@color/app_red"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти и выключить будильник"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#555555" />
+
+</LinearLayout>
